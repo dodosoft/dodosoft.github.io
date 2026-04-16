@@ -1,0 +1,256 @@
+/* DodoSoft Legal Pages - Neon Dark Theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #E0E0E0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  padding: 24px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 32px 0 48px;
+  border-bottom: 1px solid #1A1A1A;
+  margin-bottom: 48px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00FFFF;
+  text-shadow:
+    0 0 8px #00FFFF,
+    0 0 16px rgba(0, 255, 255, 0.6),
+    0 0 24px rgba(0, 255, 255, 0.3);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: #666;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Page title */
+h1 {
+  font-size: 28px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.updated {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+/* Sections */
+h2 {
+  font-size: 20px;
+  color: #00FFFF;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  padding-left: 12px;
+  border-left: 3px solid #00FFFF;
+}
+
+h3 {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 16px;
+  color: #C0C0C0;
+}
+
+ul, ol {
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #C0C0C0;
+}
+
+strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+a {
+  color: #00FFFF;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  transition: all 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #00FFFF;
+  text-shadow: 0 0 4px rgba(0, 255, 255, 0.5);
+}
+
+/* Info box */
+.info-box {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin: 24px 0;
+  font-size: 14px;
+  color: #B0B0B0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #1A1A1A;
+}
+
+th {
+  background: rgba(0, 255, 255, 0.05);
+  color: #00FFFF;
+  font-weight: 600;
+}
+
+td {
+  color: #C0C0C0;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #1A1A1A;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.site-footer p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.lang-switch {
+  margin-top: 16px;
+}
+
+.lang-switch a {
+  margin: 0 8px;
+  color: #888;
+  border-bottom: none;
+}
+
+.lang-switch a:hover {
+  color: #00FFFF;
+}
+
+/* Landing page specific */
+.doc-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+}
+
+.doc-list li {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #1A1A1A;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.doc-list li:hover {
+  border-color: rgba(0, 255, 255, 0.4);
+  background: rgba(0, 255, 255, 0.03);
+}
+
+.doc-list a {
+  display: block;
+  padding: 20px 24px;
+  color: #E0E0E0;
+  border-bottom: none;
+  font-weight: 500;
+}
+
+.doc-list a:hover {
+  color: #00FFFF;
+  text-shadow: none;
+}
+
+.doc-lang {
+  color: #666;
+  font-size: 12px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 16px 12px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
