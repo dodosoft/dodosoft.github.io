@@ -15,10 +15,10 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<div class="updated">Last Updated: April 16, 2026</div>
+<div class="updated">Last Updated: May 7, 2026</div>
 
 <div class="info-box">
-This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us," or "our"), including Neon Drop, BattleCandy, and any future titles (collectively, the "Services").
+This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us," or "our"), including Neon Drop Arcade, Snackcade, and any future titles (collectively, the "Services"). Some features described below (such as global leaderboards and analytics) apply only to certain titles; this is noted where relevant.
 </div>
 
 <p>We take your privacy seriously. This Privacy Policy explains what information we collect, how we use it, and how we protect it. By using our Services, you agree to the terms described below.</p>
@@ -31,6 +31,9 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li><strong>App Usage Data:</strong> Play time, in-game events (level progress, game over, item usage), app version</li>
   <li><strong>Crash Logs and Diagnostics:</strong> Crash reports, error logs, performance data</li>
   <li><strong>Approximate Location:</strong> Country-level location derived from IP address (for advertising purposes only; no precise location is collected)</li>
+  <li><strong>Anonymous User Identifier (Snackcade only):</strong> An anonymous Firebase Authentication user ID (uid) is generated automatically on first launch. This identifier is not linked to your name, email, or any other personal information.</li>
+  <li><strong>Auto-Generated Display Name (Snackcade only):</strong> A randomly generated nickname (e.g., "Player1234") derived from the anonymous uid, used only for global leaderboard display. No user input is collected.</li>
+  <li><strong>Game Score Data (Snackcade only):</strong> Highest score per game, timestamp of submission, and the auto-generated display name, stored on Firebase Realtime Database for global leaderboard purposes.</li>
 </ul>
 <p>We do <strong>not</strong> collect personally identifiable information such as names, phone numbers, postal addresses, or account credentials.</p>
 
@@ -40,6 +43,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>To improve our Services and user experience</li>
   <li>To fix bugs and maintain app stability</li>
   <li>To analyze usage statistics</li>
+  <li>To operate global leaderboards and display rankings (Snackcade only)</li>
 </ul>
 
 <h2>3. Third-Party Services</h2>
@@ -69,6 +73,26 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
       <td>App distribution and updates</td>
       <td>Device information</td>
     </tr>
+    <tr>
+      <td>Firebase Analytics (Snackcade only)</td>
+      <td>Usage analytics</td>
+      <td>App usage events, device info, anonymous user ID</td>
+    </tr>
+    <tr>
+      <td>Firebase Authentication (Snackcade only)</td>
+      <td>Anonymous user identification</td>
+      <td>Anonymous user ID (uid)</td>
+    </tr>
+    <tr>
+      <td>Firebase Realtime Database (Snackcade only)</td>
+      <td>Global leaderboards</td>
+      <td>Auto-generated display name, score, timestamp, uid</td>
+    </tr>
+    <tr>
+      <td>Firebase Crashlytics (Snackcade only)</td>
+      <td>Crash reporting</td>
+      <td>Crash logs, device info, app version</td>
+    </tr>
   </tbody>
 </table>
 
@@ -76,12 +100,14 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
 <ul>
   <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
   <li>AdMob: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a></li>
+  <li>Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
 </ul>
 
 <h2>4. Data Retention and Deletion</h2>
 <p>We retain collected information only as long as necessary to provide the Services. Specifically:</p>
 <ul>
-  <li>Game records (high scores, etc.) are stored locally on your device (PlayerPrefs) and are deleted when you uninstall the app</li>
+  <li>Local game records (settings, preferences, etc.) are stored locally on your device (PlayerPrefs) and are deleted when you uninstall the app</li>
+  <li>Global leaderboard data (Snackcade only): Score data is retained on Firebase Realtime Database to maintain global rankings. Upon deletion request, all records associated with your anonymous uid will be permanently removed.</li>
   <li>Advertising data is handled according to Google AdMob's policies</li>
   <li>Crash logs are retained for up to 90 days</li>
 </ul>
@@ -92,7 +118,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
 <ul>
   <li>Access your personal information</li>
   <li>Correct inaccurate information</li>
-  <li>Request deletion of your information</li>
+  <li>Request deletion of your information (including leaderboard records)</li>
   <li>Object to or restrict processing</li>
   <li>Withdraw consent for personalized advertising (via in-app settings or device settings)</li>
 </ul>
