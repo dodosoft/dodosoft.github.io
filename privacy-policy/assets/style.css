@@ -254,3 +254,22 @@ td {
     padding: 8px;
   }
 }
+
+/* 사업자정보 (전자상거래법 제10조 신원정보) */
+.biz-info {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #1A1A1A;
+  color: #777;
+  font-size: 12.5px;
+  line-height: 1.8;
+  text-align: center;
+}
+.biz-info strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #9AA;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.biz-info a { color: #4FC3D7; }
