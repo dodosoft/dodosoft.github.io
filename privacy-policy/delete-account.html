@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarGuardians 계정 및 데이터 삭제 - DodoSoft</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+
+<header class="site-header">
+  <a href="./" class="logo">DODOSOFT</a>
+  <div class="tagline">StarGuardians Account Deletion</div>
+</header>
+
+<h1>StarGuardians 계정 및 데이터 삭제</h1>
+<div class="updated">최종 수정일: 2026년 7월 17일</div>
+
+<div class="info-box">
+  이 페이지는 DodoSoft의 모바일 게임 <strong>StarGuardians</strong> 계정과 연결된 데이터를 삭제하는 공식 절차입니다.<br>
+  This is the official process for deleting a <strong>StarGuardians</strong> account and its associated data.
+</div>
+
+<h2>앱에서 즉시 삭제 / Delete in the App</h2>
+<ol>
+  <li>StarGuardians를 실행합니다. / Open StarGuardians.</li>
+  <li><strong>설정 → 계정 관리 → 계정 삭제</strong>를 선택합니다.<br>
+      Select <strong>Settings → Account Management → Delete Account</strong>.</li>
+  <li>두 번의 확인 안내를 읽고 삭제를 확정합니다. / Review both confirmation prompts and confirm deletion.</li>
+</ol>
+<p>인증이 완료되면 계정과 일반 게임 데이터가 삭제되고 기기의 로컬 세이브가 초기화됩니다. 삭제 계정이 등록한 진행 중 경매는 삭제 과정에서 취소되며, 다른 이용자의 현재 최고입찰금이 있으면 해당 이용자에게 반환됩니다.</p>
+<p>After authentication, the account and ordinary game data are deleted and the local save is reset. Any open auction listed by the deleted account is canceled during deletion, and a surviving user's current highest bid is returned to that user.</p>
+
+<h2>앱 없이 삭제 요청 / Request Deletion Without the App</h2>
+<p>앱에 접속할 수 없는 경우 아래 이메일 링크로 요청해 주세요. 본인 확인을 위해 플랫폼(Android/iOS), 게임 내 닉네임, 로그인 제공자(Google/Apple/게스트), 마지막 접속 시기를 알려주세요.</p>
+<p>If you cannot access the app, use the email link below. For account verification, include your platform (Android/iOS), in-game nickname, sign-in provider (Google/Apple/Guest), and approximate last login date.</p>
+<p><a href="mailto:vintermilv@gmail.com?subject=%5BStarGuardians%5D%20Account%20Deletion%20Request">계정 삭제 요청 이메일 보내기 / Email an Account Deletion Request</a></p>
+<div class="info-box">
+  <strong>보안 안내 / Security Notice</strong><br>
+  비밀번호, 로그인 토큰, 신분증 원본 또는 전체 구매 영수증을 보내지 마세요.<br>
+  Never send your password, login token, original identity document, or full purchase receipt.
+</div>
+<p>본인 확인이 끝난 요청은 통상 7영업일 안에 처리합니다. 복잡한 거래 확인이나 법적 보존 의무가 있으면 최대 30일까지 걸릴 수 있으며 그 경우 별도로 안내합니다.</p>
+<p>Verified requests are normally completed within seven business days. A complex transaction review or legal retention duty may require up to 30 days, in which case we will notify you.</p>
+
+<h2>삭제되는 데이터 / Data We Delete</h2>
+<ul>
+  <li>Firebase Authentication 계정과 Google/Apple 연결 정보 / Firebase Authentication account and Google/Apple linkage</li>
+  <li>닉네임, 클라우드 세이브, 보유 카드·덱·재화·진행도 / Nickname, cloud save, cards, decks, balances, and progress</li>
+  <li>우편, 광고 보상, 요청 제한 및 멱등 처리 기록 / Mail, ad rewards, rate-limit, and idempotency records</li>
+  <li>쿠폰 사용 및 보상 수령 기록 / Coupon-redemption and reward-claim records</li>
+  <li>PvP 랭킹·시즌·매치의 계정 연결 정보 / Account-linked PvP ranking, season, and match data</li>
+  <li>경매 등록·입찰·감사 기록의 계정 연결 정보 / Account-linked auction, bid, and audit data</li>
+</ul>
+
+<h2>법률상 보존되는 데이터 / Legally Retained Data</h2>
+<p>관련 법령, 환불, 분쟁 해결 및 결제 부정사용 방지를 위해 아래 거래 기록은 일반 게임 데이터와 분리하여 접근을 제한한 상태로 보존할 수 있습니다. 보존 기간이 끝나면 안전하게 삭제하거나 계정과 연결할 수 없도록 비식별화합니다.</p>
+<p>We may retain the following transaction records separately with restricted access when required for law, refunds, dispute resolution, or payment-fraud prevention. After the retention period, they are securely deleted or de-identified so they can no longer be linked to the game account.</p>
+<p>결제, 광고 보상 및 경매의 중복 지급·재전송을 막기 위해 필요한 최소 원장은 계정 삭제 시 uid를 제거하고 일방향 가명 표식으로 교체할 수 있습니다. 이 표식은 일반 게임 데이터와 분리해 접근을 제한하며, 원장 목적이나 아래 법정 보존기간이 끝나면 삭제 또는 추가 비식별화합니다.</p>
+<p>For the minimum ledgers needed to prevent duplicate or replayed purchase, ad-reward, and auction transactions, we may remove the uid and replace it with a one-way pseudonymous marker at account deletion. These markers are separated from ordinary game data with restricted access and are deleted or further de-identified when the ledger purpose or applicable period below ends.</p>
+<ul>
+  <li>계약·청약철회 및 대금결제·재화 공급 기록: 5년 / Contract, cancellation, payment, and supply records: 5 years</li>
+  <li>소비자 불만 또는 분쟁 처리 기록: 3년 / Consumer complaint or dispute records: 3 years</li>
+  <li>표시·광고 기록: 6개월 / Display and advertising records: 6 months</li>
+</ul>
+<p>자세한 내용은 <a href="privacy-ko.html">개인정보처리방침</a> 및 <a href="privacy-en.html">Privacy Policy</a>을 확인해 주세요.</p>
+
+<h2>문의 / Contact</h2>
+<ul>
+  <li><strong>개발자 / Developer:</strong> DodoSoft</li>
+  <li><strong>게임 / Game:</strong> StarGuardians</li>
+  <li><strong>이메일 / Email:</strong> <a href="mailto:vintermilv@gmail.com">vintermilv@gmail.com</a></li>
+</ul>
+
+<footer class="site-footer">
+  <p>&copy; 2026 DodoSoft. All rights reserved.</p>
+  <div class="lang-switch">
+    <a href="privacy-ko.html">개인정보처리방침</a> |
+    <a href="privacy-en.html">Privacy Policy</a> |
+    <a href="./">Home</a>
+  </div>
+  <div class="biz-info">
+    <strong>사업자정보</strong>
+    상호: 도도소프트 &nbsp;|&nbsp; 대표자: 이수호<br>
+    사업자등록번호: 811-21-02626<br>
+    통신판매업 신고번호: 2026-서울동작-0557<br>
+    주소: 서울특별시 동작구 여의대방로 22, 3동 202호 (신대방동, 우성아파트)<br>
+    전화: 010-5240-3537 &nbsp;|&nbsp; 이메일: <a href="mailto:vintermilv@gmail.com">vintermilv@gmail.com</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

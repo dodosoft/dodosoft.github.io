@@ -15,7 +15,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<div class="updated">Last Updated: May 7, 2026</div>
+<div class="updated">Last Updated: July 17, 2026</div>
 
 <div class="info-box">
 This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us," or "our"), including Neon Drop Arcade, Snackcade, StarGuardians, and any future titles (collectively, the "Services"). Some features described below (such as global leaderboards and analytics) apply only to certain titles; this is noted where relevant.
@@ -31,14 +31,16 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li><strong>App Usage Data:</strong> Play time, in-game events (level progress, game over, item usage), app version</li>
   <li><strong>Crash Logs and Diagnostics:</strong> Crash reports, error logs, performance data</li>
   <li><strong>Approximate Location:</strong> Country-level location derived from IP address (for advertising purposes only; no precise location is collected)</li>
-  <li><strong>Anonymous User Identifier (Snackcade, StarGuardians):</strong> An anonymous Firebase Authentication user ID (uid) is generated automatically on first launch. This identifier is not linked to your name, email, or any other personal information.</li>
+  <li><strong>Account Identifier (Snackcade, StarGuardians):</strong> A Firebase Authentication user ID (uid) is generated automatically on first launch. If you optionally link a Google or Apple account in StarGuardians, the provider identifier and any email or display name supplied by that provider may be processed for authentication. The app displays email addresses in masked form.</li>
   <li><strong>Auto-Generated Display Name (Snackcade only):</strong> A randomly generated nickname (e.g., "Player1234") derived from the anonymous uid, used only for global leaderboard display. No user input is collected.</li>
   <li><strong>Game Score Data (Snackcade only):</strong> Highest score per game, timestamp of submission, and the auto-generated display name, stored on Firebase Realtime Database for global leaderboard purposes.</li>
   <li><strong>User-Set Nickname (StarGuardians only):</strong> An optional nickname you may set, used only for PvP ranking display. You may change it at any time.</li>
   <li><strong>Roster, Save &amp; Ranking Data (StarGuardians only):</strong> Your owned cards, decks, currency balances, and PvP score are stored on Firebase Cloud Firestore under your anonymous uid to enable cloud save and leaderboards.</li>
   <li><strong>In-App Purchase Records (StarGuardians only):</strong> Purchase receipts and transaction IDs are processed to verify and restore purchases. Payments are handled by Google Play or the App Store; we do not collect or store payment card details.</li>
+  <li><strong>PvP and Auction Records (StarGuardians only):</strong> Match results, season scores, auction listings, bids, sales, refunds, and anti-abuse audit information are processed under your uid.</li>
+  <li><strong>Coupon, Ad Reward, and Security Data (StarGuardians only):</strong> Coupon campaign, reward and redemption time, ad transaction IDs, request timestamps, App Check status, and rate-limit records are processed to prevent duplicate rewards and automated abuse. The raw coupon code you enter is not stored or logged; a normalized hash is used for lookup.</li>
 </ul>
-<p>We do <strong>not</strong> collect personally identifiable information such as names, phone numbers, postal addresses, or account credentials.</p>
+<p>We do <strong>not</strong> collect or store your sign-in password, payment card number, or government identification number. If you link Google or Apple, we may process the provider identifier and the email or display name described above.</p>
 
 <h2>2. How We Use Information</h2>
 <ul>
@@ -47,6 +49,9 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>To fix bugs and maintain app stability</li>
   <li>To analyze usage statistics</li>
   <li>To operate global leaderboards and display rankings (Snackcade only)</li>
+  <li>To authenticate accounts and operate cloud save, PvP, and player-to-player auctions (StarGuardians only)</li>
+  <li>To verify purchases, grant rewards, prevent duplicate payment or abuse, and resolve disputes (StarGuardians only)</li>
+  <li>To validate coupons, enforce per-account redemption limits, and grant server-authoritative rewards (StarGuardians only)</li>
 </ul>
 
 <h2>3. Third-Party Services</h2>
@@ -82,9 +87,9 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
       <td>App usage events, device info, anonymous user ID</td>
     </tr>
     <tr>
-      <td>Firebase Authentication (Snackcade only)</td>
-      <td>Anonymous user identification</td>
-      <td>Anonymous user ID (uid)</td>
+      <td>Firebase Authentication (Snackcade, StarGuardians)</td>
+      <td>Anonymous sign-in and optional Google/Apple account linking</td>
+      <td>uid, provider identifier, and provider-supplied email or display name</td>
     </tr>
     <tr>
       <td>Firebase Realtime Database (Snackcade only)</td>
@@ -95,6 +100,16 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
       <td>Firebase Crashlytics (Snackcade only)</td>
       <td>Crash reporting</td>
       <td>Crash logs, device info, app version</td>
+    </tr>
+    <tr>
+      <td>Firebase Cloud Firestore / Cloud Functions / App Check (StarGuardians only)</td>
+      <td>Cloud save, economy ledger, PvP, auctions, coupon, purchase and ad-reward verification, and security</td>
+      <td>uid, nickname, progress, inventory, balances, PvP, auction, coupon, purchase, ad-reward, and request-verification data</td>
+    </tr>
+    <tr>
+      <td>Google Play Billing / Apple App Store (StarGuardians only)</td>
+      <td>In-app payment and receipt verification</td>
+      <td>Product ID, transaction ID, purchase token or receipt, and purchase status</td>
     </tr>
   </tbody>
 </table>
@@ -111,10 +126,14 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
 <ul>
   <li>Local game records (settings, preferences, etc.) are stored locally on your device (PlayerPrefs) and are deleted when you uninstall the app</li>
   <li>Global leaderboard data (Snackcade only): Score data is retained on Firebase Realtime Database to maintain global rankings. Upon deletion request, all records associated with your anonymous uid will be permanently removed.</li>
+  <li>StarGuardians account and game data: Retained while the service is used. Following in-app account deletion or a verified external request, we delete the authentication account, nickname, cloud save, inventory, balances, progress, coupon-redemption records, and account-linked PvP and auction data.</li>
+  <li>Contract, cancellation, payment, and digital-goods supply records: retained separately for 5 years where required by Korean e-commerce law</li>
+  <li>Consumer complaint or dispute records: retained separately for 3 years where required by law</li>
+  <li>Display and advertising records: retained separately for 6 months where required by law</li>
   <li>Advertising data is handled according to Google AdMob's policies</li>
   <li>Crash logs are retained for up to 90 days</li>
 </ul>
-<p>When you uninstall the app or request deletion, your information will be deleted without undue delay.</p>
+<p>Uninstalling the app removes local device data but may not automatically delete server account data. You can request server deletion in StarGuardians through <strong>Settings → Account Management → Delete Account</strong> or through our <a href="delete-account.html">StarGuardians Account and Data Deletion page</a>. Transaction records that must be retained by law are separated from ordinary game data with restricted access and are deleted or de-identified after the retention period.</p>
 
 <h2>5. Your Rights</h2>
 <p>You have the following rights regarding your personal information:</p>
@@ -126,6 +145,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>Withdraw consent for personalized advertising (via in-app settings or device settings)</li>
 </ul>
 <p>To exercise any of these rights, please email us at the address provided below.</p>
+<p>For the StarGuardians deletion process and the exact deletion and retention scope, see our <a href="delete-account.html">Account and Data Deletion page</a>.</p>
 
 <h3>How to Reset Your Advertising ID</h3>
 <ul>
@@ -134,7 +154,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
 </ul>
 
 <h2>6. Children's Privacy (COPPA)</h2>
-<p>Our Services are <strong>not directed to children under the age of 13</strong>. We do not knowingly collect personal information from children under 13. If you believe your child has provided us with personal information, please contact us immediately, and we will promptly delete the information.</p>
+<p>Our Services are <strong>not directed to children under the age of 13</strong>, and StarGuardians is offered to users aged 18 and over according to its store rating and target-audience settings. We do not knowingly collect personal information from children under 13. If you believe your child has provided us with personal information, please contact us immediately, and we will promptly delete it.</p>
 
 <h2>7. European (EEA/UK) and California Users</h2>
 
@@ -162,6 +182,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>All data transmission uses HTTPS encryption</li>
   <li>Third-party services adhere to industry-standard security protocols</li>
   <li>Access to personal information is minimized and restricted</li>
+  <li>Firebase Security Rules, authentication, and staged App Check verification restrict or detect unauthorized requests</li>
 </ul>
 
 <h2>9. Changes to This Policy</h2>
