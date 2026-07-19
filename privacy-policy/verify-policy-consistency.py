@@ -66,13 +66,13 @@ def main() -> int:
 
     required = {
         "ko": [
-            "2026년 7월 20일", "Firebase Analytics Android SDK 23.2.0", "자동 수집이 활성화",
+            "2026년 7월 20일", "StarGuardians Android 분석 안내", "Android 23.2.0", "자동 수집이 활성화",
             "Unity IAP 5.4", "IAP Insights", "unity-iap-contact@unity3d.com",
             "Firebase uid", "SSV", "프로필 및 소셜 정보", "친구 코드", "클랜",
             "카드 교환", "동의 및 환경설정", "지원 및 삭제 요청 정보", "퇴역한 경매",
         ],
         "en": [
-            "July 20, 2026", "Firebase Analytics Android SDK 23.2.0", "Automatic collection is enabled",
+            "July 20, 2026", "StarGuardians Android analytics notice", "Android 23.2.0", "Automatic collection is enabled",
             "Unity IAP 5.4", "IAP Insights", "unity-iap-contact@unity3d.com",
             "Firebase uid", "SSV", "Profile and Social Information", "friend code", "clan",
             "card-trade", "Consent and Preferences", "Support and Deletion Request Information", "Retired Auction",
