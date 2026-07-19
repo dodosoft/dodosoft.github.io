@@ -15,7 +15,7 @@
 </header>
 
 <h1>개인정보처리방침</h1>
-<div class="updated">최종 수정일: 2026년 7월 17일</div>
+<div class="updated">최종 수정일: 2026년 7월 20일</div>
 
 <div class="info-box">
 본 개인정보처리방침은 DodoSoft(이하 "회사")가 제공하는 모든 모바일 게임(Neon Drop Arcade, Snackcade, StarGuardians 등, 이하 "서비스")에 공통 적용됩니다. 일부 기능(글로벌 랭킹, 분석 등)은 특정 게임에만 적용되며, 해당 항목에 별도 표기되어 있습니다.
@@ -26,20 +26,24 @@
 <h2>1. 수집하는 개인정보 항목</h2>
 <p>회사는 서비스 제공을 위해 다음과 같은 정보를 수집합니다.</p>
 <ul>
-  <li><strong>광고 식별자:</strong> Google 광고 ID(AAID), Apple 광고 ID(IDFA)</li>
-  <li><strong>기기 정보:</strong> 기기 모델명, 운영체제(OS) 버전, 시스템 언어, 국가 코드, 화면 해상도</li>
-  <li><strong>앱 사용 데이터:</strong> 플레이 시간, 게임 내 이벤트(레벨 진행, 게임오버, 아이템 사용 등), 앱 버전</li>
-  <li><strong>크래시 로그 및 진단 정보:</strong> 앱 충돌 시 발생한 오류 정보, 성능 데이터</li>
-  <li><strong>대략적 위치 정보:</strong> IP 주소 기반 국가 수준 위치(광고 목적, 정확한 위치는 수집하지 않음)</li>
-  <li><strong>계정 식별자 (Snackcade, StarGuardians):</strong> 첫 실행 시 Firebase 인증을 통해 자동 생성되는 사용자 ID(uid). StarGuardians에서 이용자가 선택적으로 Google 또는 Apple 계정을 연동하면 해당 로그인 제공자 식별자와 제공자가 전달한 이메일·표시 이름이 인증 처리에 사용될 수 있습니다. 앱 화면에는 이메일을 마스킹하여 표시합니다.</li>
+  <li><strong>광고 및 앱·기기 식별자:</strong> Google 광고 ID(AAID), Apple 광고 ID(IDFA, 이용자가 추적을 허용한 경우), Firebase 앱 인스턴스 식별자, Unity 설치·세션 식별자(StarGuardians에만 해당) 등</li>
+  <li><strong>기기 정보:</strong> 기기 모델명, 운영체제(OS) 버전, 시스템 언어, 국가 코드, 화면 해상도, 앱 버전</li>
+  <li><strong>앱 사용 및 게임 활동 데이터:</strong> 앱 실행·세션, 화면·기능 이용, 플레이 시간, 레벨 진행, 게임오버, 아이템 사용, 구매 관련 이벤트 등 SDK가 자동 수집하거나 앱이 전송하는 이벤트</li>
+  <li><strong>크래시 로그 및 진단 정보:</strong> 앱 충돌 시 발생한 오류 정보, SDK·네트워크 진단, 성능 및 기타 앱 안정성 데이터</li>
+  <li><strong>대략적 위치 정보:</strong> IP 주소 또는 국가 코드로 추정한 국가·지역 수준 위치(정확한 위치는 수집하지 않음)</li>
+  <li><strong>계정 식별자 및 계정 정보 (Snackcade, StarGuardians):</strong> 첫 실행 시 Firebase 인증을 통해 자동 생성되는 사용자 ID(uid). StarGuardians에서 이용자가 선택적으로 Google 또는 Apple 계정을 연동하면 해당 로그인 제공자 식별자와 제공자가 전달한 이름·이메일·표시 이름이 인증 처리에 사용될 수 있습니다. 앱 화면에는 이메일을 마스킹하여 표시합니다.</li>
   <li><strong>자동 생성 표시 이름 (Snackcade에만 해당):</strong> 익명 uid에서 파생된 무작위 닉네임(예: "Player1234")이 글로벌 랭킹 표시용으로 자동 생성됩니다. 사용자가 직접 입력하는 정보는 없습니다.</li>
   <li><strong>게임 점수 데이터 (Snackcade에만 해당):</strong> 게임별 최고 점수, 제출 시각, 자동 생성 표시 이름이 글로벌 랭킹 운영을 위해 Firebase Realtime Database에 저장됩니다.</li>
-  <li><strong>사용자 설정 닉네임 (StarGuardians에만 해당):</strong> 이용자가 선택적으로 설정하는 닉네임으로, PvP 랭킹 표시에만 사용되며 언제든지 변경할 수 있습니다.</li>
-  <li><strong>보유·세이브·랭킹 데이터 (StarGuardians에만 해당):</strong> 보유 카드, 덱, 재화 잔액, PvP 점수가 클라우드 세이브·랭킹을 위해 익명 uid 기준으로 Firebase Cloud Firestore에 저장됩니다.</li>
-  <li><strong>인앱 구매 내역 (StarGuardians에만 해당):</strong> 구매 검증·복원을 위해 영수증·거래 ID가 처리됩니다. 결제는 Google Play 또는 App Store가 처리하며, 회사는 카드 정보를 수집·저장하지 않습니다.</li>
-  <li><strong>PvP·경매 기록 (StarGuardians에만 해당):</strong> 매치 결과, 시즌 점수, 경매 등록·입찰·낙찰·환불 기록과 부정 이용 방지 감사 정보가 uid 기준으로 처리됩니다.</li>
-  <li><strong>쿠폰·광고 보상 및 보안 정보 (StarGuardians에만 해당):</strong> 쿠폰 사용 캠페인·보상·시각, 광고 거래 ID, 요청 시각, App Check 검증 상태 및 제한 기록이 보상 중복 지급과 자동화된 부정 이용을 방지하기 위해 처리됩니다. 입력한 쿠폰 코드 원문은 저장하거나 로그에 기록하지 않고 정규화한 해시로 조회합니다.</li>
+  <li><strong>프로필 및 소셜 정보 (StarGuardians에만 해당):</strong> 이용자가 설정하거나 서비스가 생성하는 닉네임, 공개 player ID·친구 코드, 선택한 프로필 카드·아바타·프레임·코스메틱, 친구 요청·친구·차단 관계, 클랜 이름·엠블럼·공지·역할·기여도·가입 요청, 카드 교환 제안·상태·감사 기록이 처리됩니다. 닉네임, 공개 ID, 프로필 장식, 클랜 정보 등 기능상 공개하도록 선택한 항목은 해당 기능의 다른 이용자에게 표시됩니다. 이메일과 로그인 제공자 ID는 소셜 화면에 공개하지 않습니다.</li>
+  <li><strong>검색 정보 (StarGuardians에만 해당):</strong> 친구 또는 클랜을 찾기 위해 입력한 닉네임·친구 코드·클랜명 검색어가 서버에 일시적으로 전송됩니다. 현재 게임 서버는 원문 검색어를 저장하거나 로그에 기록하지 않습니다.</li>
+  <li><strong>보유·세이브·랭킹 및 게임 활동 데이터 (StarGuardians에만 해당):</strong> 보유 카드, 덱과 덱 이름, 재화 잔액, 스테이지·미션·출석·튜토리얼 진행, 가챠·보상·우편, PvP·클랜전 결과와 시즌 점수 등이 uid 기준으로 Firebase Cloud Firestore에 저장됩니다.</li>
+  <li><strong>인앱 구매 내역 (StarGuardians에만 해당):</strong> 구매·복원·환불·중복 지급 방지를 위해 상품 ID, 구매 이력, 영수증, 구매 토큰, 주문·거래 ID와 구매 상태가 처리됩니다. 결제는 Google Play 또는 App Store가 처리하며, 회사는 카드 정보를 수집·저장하지 않습니다.</li>
+  <li><strong>쿠폰·광고 보상 및 보안 정보 (StarGuardians에만 해당):</strong> 쿠폰 캠페인·보상·사용 시각, 광고 거래 ID, 요청 시각, App Check·Play Integrity 검증 상태, 속도 제한·멱등·보안 감사 기록이 중복 지급과 자동화된 부정 이용을 방지하기 위해 처리됩니다. 입력한 쿠폰 코드 원문은 저장하거나 로그에 기록하지 않고 정규화한 해시로 조회합니다. 보상형 광고의 서버측 검증(SSV)을 위해 가명 계정 식별자인 Firebase uid가 Google AdMob에 <code>user_id</code>로 전달되고 검증 콜백에 포함됩니다.</li>
+  <li><strong>동의 및 환경설정 (StarGuardians에만 해당):</strong> 필수 약관·개인정보처리방침 동의 버전과 시각, 선택적 마케팅 동의, 광고 개인정보 선택 상태, 언어·게임 설정이 처리될 수 있습니다. 필수 동의 버전·시각과 마케팅 동의는 계정 세이브와 함께 클라우드에 저장될 수 있습니다.</li>
+  <li><strong>지원 및 삭제 요청 정보:</strong> 이용자가 이메일 문의 또는 계정 삭제를 요청할 때 자발적으로 제공한 발신 이메일 주소, 본문·첨부파일, 플랫폼, 앱 버전, 닉네임·친구 코드, 로그인 제공자, 최근 접속 시각, 구매 관련 최소 거래 식별자가 문의 처리와 본인 확인에 사용될 수 있습니다. 비밀번호, 로그인 토큰, 신분증 원본 또는 전체 결제수단 정보를 보내지 마세요.</li>
+  <li><strong>퇴역한 경매 기록 (StarGuardians에만 해당):</strong> 경매 기능은 퇴역하여 신규 등록·입찰을 받지 않습니다. 과거 매물·입찰·정산·환불 및 자산 복구·부정 이용 방지 감사 기록만 삭제·가명화·법정 보존 절차를 위해 제한적으로 처리될 수 있습니다.</li>
 </ul>
+<p><strong>StarGuardians Android Build 63 안내:</strong> 이 빌드에는 Firebase Analytics Android SDK 23.2.0이 포함되어 있으며 별도의 게임 내 분석 버튼을 누르지 않아도 앱 실행 시 앱 인스턴스 식별자, 최초 실행·앱 실행·세션·수명주기·화면 및 구매 관련 자동 이벤트, 앱·기기 정보, IP 기반 대략적 위치와 사용 가능한 경우 광고 식별자를 자동 처리할 수 있습니다. 또한 Unity IAP 5.4의 IAP Insights는 구매 기능 운영을 위해 구매·거래 이벤트, Unity 설치·세션 및 기기 식별자, 기기·국가 정보, 크래시·진단·성능 정보를 Unity에 전송할 수 있습니다.</p>
 <p>회사는 로그인 비밀번호, 결제 카드번호, 주민등록번호를 수집하거나 저장하지 않습니다. Google/Apple 계정을 연동하는 경우에는 위에 명시한 계정 식별자와 제공자가 전달한 이메일·표시 이름이 처리될 수 있습니다.</p>
 
 <h2>2. 개인정보의 수집 및 이용 목적</h2>
@@ -49,9 +53,12 @@
   <li>버그 수정 및 앱 안정성 관리</li>
   <li>이용 통계 분석</li>
   <li>글로벌 랭킹 운영 및 순위 표시 (Snackcade에만 해당)</li>
-  <li>계정 인증, 클라우드 세이브, PvP 및 이용자 간 경매 운영 (StarGuardians에만 해당)</li>
+  <li>계정 인증, 클라우드 세이브, 프로필·친구·클랜·카드 교환, PvP·클랜전 운영 (StarGuardians에만 해당)</li>
   <li>인앱 구매 검증, 보상 지급, 중복 결제·부정 이용 방지 및 분쟁 처리 (StarGuardians에만 해당)</li>
   <li>쿠폰 유효성 확인, 계정당 사용 제한 및 서버 권위 보상 지급 (StarGuardians에만 해당)</li>
+  <li>필수 동의 이력 관리, 선택적 마케팅·광고 개인정보 선택 반영 및 법적 의무 준수 (StarGuardians에만 해당)</li>
+  <li>지원·버그·결제·계정 문의 응답, 계정 삭제 본인 확인 및 처리 결과 안내</li>
+  <li>퇴역 경매의 잔여 자산 복구, 환불·분쟁 처리 및 부정 이용 방지 감사 (StarGuardians에만 해당)</li>
 </ul>
 
 <h2>3. 제3자 서비스 및 정보 공유</h2>
@@ -68,8 +75,8 @@
   <tbody>
     <tr>
       <td>Google AdMob</td>
-      <td>광고 제공</td>
-      <td>광고 ID, 기기 정보, 대략적 위치</td>
+      <td>광고 제공, 보상형 광고 SSV 검증, 광고 분석 및 부정 이용 방지</td>
+      <td>광고·기기 식별자, IP 기반 대략적 위치, 기기·앱 정보, 광고 및 앱 상호작용, 진단 정보. StarGuardians 보상형 광고에서는 광고 거래 ID와 Firebase uid가 SSV <code>user_id</code>로 함께 처리됩니다.</td>
     </tr>
     <tr>
       <td>Google UMP (User Messaging Platform)</td>
@@ -77,14 +84,14 @@
       <td>동의 상태</td>
     </tr>
     <tr>
-      <td>Google Play Services</td>
-      <td>앱 배포 및 업데이트</td>
-      <td>기기 정보</td>
+      <td>Google Play Services / Play Integrity (StarGuardians Android)</td>
+      <td>앱 배포·업데이트, 앱·기기 무결성 및 부정 이용 방지</td>
+      <td>기기·앱 메타데이터, 라이선스 상태, 요청 해시·nonce, Play Integrity 토큰과 판정 결과. 설치 앱 목록 자체는 회사에 제공되지 않습니다.</td>
     </tr>
     <tr>
-      <td>Firebase Analytics (Snackcade에만 해당)</td>
-      <td>이용 통계 분석</td>
-      <td>앱 사용 이벤트, 기기 정보, 익명 사용자 ID</td>
+      <td>Firebase Analytics (Snackcade, StarGuardians; Android 23.2.0)</td>
+      <td>자동 이용 통계 및 앱 안정성·기능 개선 분석</td>
+      <td>앱 실행·최초 실행·세션·수명주기·화면 및 구매 관련 자동 이벤트, 앱·기기 정보, 앱 인스턴스·광고 식별자, IP 기반 대략적 위치. StarGuardians Build 63에서 자동 수집이 활성화되어 있습니다.</td>
     </tr>
     <tr>
       <td>Firebase Authentication (Snackcade, StarGuardians)</td>
@@ -103,22 +110,39 @@
     </tr>
     <tr>
       <td>Firebase Cloud Firestore / Cloud Functions / App Check (StarGuardians에만 해당)</td>
-      <td>클라우드 세이브, 경제 원장, PvP, 경매, 쿠폰·구매·광고 보상 검증 및 보안</td>
-      <td>uid, 닉네임, 게임 진행·보유·재화, PvP·경매·쿠폰·구매·광고 보상 기록, 요청 검증 정보</td>
+      <td>클라우드 세이브, 경제 원장, 프로필·친구·클랜·교환, PvP·클랜전, 쿠폰·구매·광고 보상 검증 및 보안</td>
+      <td>uid, 닉네임·공개 ID·친구 코드·프로필 코스메틱, 친구·차단 social graph, 클랜·공지·기여·가입 요청, 카드 교환, 동의 상태, 게임 진행·보유·재화, PvP·쿠폰·구매·광고 보상 기록, 네트워크·요청 검증 정보와 퇴역 경매의 과거 감사 기록</td>
     </tr>
     <tr>
       <td>Google Play Billing / Apple App Store (StarGuardians에만 해당)</td>
       <td>인앱 구매 결제 및 영수증 검증</td>
       <td>상품 ID, 거래 ID, 구매 토큰 또는 영수증, 구매 상태</td>
     </tr>
+    <tr>
+      <td>Unity IAP 5.4 이상 (StarGuardians에만 해당)</td>
+      <td>인앱 상품 조회·구매·복원, IAP Insights 및 결제 기능 진단</td>
+      <td>구매 이력·상품·거래 이벤트, 개인·Unity 설치·세션·기기 식별자, 기기·앱 정보, 국가 수준 대략적 위치, Unity의 SDK 공개표에 따라 처리될 수 있는 이메일·광고 식별자, 크래시·진단·기타 앱 성능 정보</td>
+    </tr>
+    <tr>
+      <td>Google Cloud Logging (StarGuardians에만 해당)</td>
+      <td>서버 운영, 장애 분석, 보안 및 부정 이용 조사</td>
+      <td>요청 시각·기능·결과, 오류 및 네트워크·요청 메타데이터, 보안 조사에 필요한 제한된 계정·거래 식별 정보</td>
+    </tr>
   </tbody>
 </table>
+
+<p>StarGuardians의 친구·클랜·카드 교환 기능에서는 이용자가 공개를 예상하고 선택한 닉네임, 공개 player ID·친구 코드, 프로필 장식, 클랜 이름·엠블럼·공지·역할·기여도와 교환 상태가 해당 기능의 상대방 또는 클랜 구성원에게 표시될 수 있습니다. 이 기능은 로그인 이메일, 인증 제공자 ID 또는 결제 정보를 다른 이용자에게 공개하지 않습니다.</p>
 
 <p>각 제3자의 개인정보 처리 방침은 아래에서 확인할 수 있습니다.</p>
 <ul>
   <li>Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
   <li>AdMob: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a></li>
   <li>Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+  <li>Firebase Analytics 데이터 공개: <a href="https://support.google.com/analytics/answer/11582702" target="_blank" rel="noopener">https://support.google.com/analytics/answer/11582702</a></li>
+  <li>Unity IAP: <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview" target="_blank" rel="noopener">https://docs.unity.com/en-us/iap/privacy-and-consent/overview</a></li>
+  <li>Unity IAP Google Play 데이터 안전: <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/google-play-data-safety" target="_blank" rel="noopener">https://docs.unity.com/en-us/iap/privacy-and-consent/google-play-data-safety</a></li>
+  <li>Unity 개인정보처리방침: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">https://unity.com/legal/privacy-policy</a></li>
+  <li>Google Cloud: <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener">https://cloud.google.com/terms/cloud-privacy-notice</a></li>
 </ul>
 
 <h2>4. 개인정보의 보유 및 파기</h2>
@@ -126,14 +150,18 @@
 <ul>
   <li>로컬 게임 기록(설정, 환경설정 등): 이용자 기기에 로컬 저장(PlayerPrefs), 앱 삭제 시 자동 삭제</li>
   <li>글로벌 랭킹 데이터(Snackcade에만 해당): 글로벌 랭킹 유지를 위해 Firebase Realtime Database에 보관됩니다. 이용자가 삭제 요청 시, 해당 익명 uid에 연관된 모든 기록은 영구 삭제됩니다.</li>
-  <li>StarGuardians 계정·게임 데이터: 서비스 이용 중 보관되며, 인앱 계정 삭제 또는 확인된 외부 삭제 요청 시 인증 계정, 닉네임, 클라우드 세이브, 보유·재화·진행도, 쿠폰 사용 기록, PvP 및 경매의 계정 연결 정보를 삭제합니다.</li>
+  <li>StarGuardians 계정·일반 게임 데이터: 서비스 이용 중 보관되며, 인앱 계정 삭제 또는 확인된 외부 삭제 요청 시 Firebase 인증 계정과 Google/Apple 연결 정보, 닉네임·공개 ID·친구 코드·프로필 코스메틱, 클라우드 세이브, 보유·재화·진행도, 동의 상태, 우편·보상·쿠폰 사용, 친구·요청·차단 관계, 클랜 가입·역할·기여·가입 요청, 카드 교환 및 PvP·클랜전의 직접 계정 연결 정보를 삭제하거나 관계에서 제거합니다. Apple 연동 계정은 앱에서 삭제할 때 Apple의 확인과 토큰 철회를 먼저 거칩니다.</li>
+  <li>퇴역 경매 데이터: 경매는 신규 이용이 중단되었습니다. 남아 있는 과거 매물의 직접 uid 연결과 삭제 계정이 등록한 잔여 매물은 삭제·취소하고, 생존 이용자의 에스크로 자산은 반환합니다. 자산 복구·분쟁·부정 이용 방지를 위한 최소 과거 감사 원장만 아래 기준으로 가명 보존할 수 있습니다.</li>
+  <li>StarGuardians 최소 거래·보안 원장: 환불·회계, 구매·광고 보상 중복 지급, 퇴역 경매 자산 복구 및 부정 이용 방지를 위해 영수증·거부 영수증, AdMob SSV 거래, 과거 경매 감사·입찰 기록의 필요한 최소 항목을 목적 제한하여 보존할 수 있습니다. 계정 삭제 시 원문 uid는 제거하고 도메인을 분리한 일방향 SHA-256 표식으로 교체하며, 일반 게임 데이터와 분리해 접근을 제한합니다.</li>
+  <li>StarGuardians 삭제 차단 표식: 삭제된 계정의 만료 전 인증 토큰이나 늦게 도착한 광고 콜백이 지갑·보상 데이터를 다시 만들지 못하도록 원문 uid 없이 위와 같은 일방향 uid 해시, 삭제 상태와 처리 시각만 보존합니다. 거래·보안 원장과 이 표식은 각 목적 또는 법적 보존 근거가 유지되는 동안만 사용하며, 보존 목적과 법적 의무가 사례별로 달라 일률적인 고정 기간을 적용하지 않습니다. 현재 보존 상태 확인이나 추가 삭제 검토는 아래 문의처로 요청할 수 있습니다.</li>
   <li>계약·청약철회 및 대금결제·재화 공급 기록: 전자상거래 등에서의 소비자보호에 관한 법률에 따라 5년간 별도 보관</li>
   <li>소비자 불만 또는 분쟁 처리 기록: 관련 법령에 따라 3년간 별도 보관</li>
   <li>표시·광고 기록: 관련 법령에 따라 6개월간 별도 보관</li>
-  <li>광고 관련 데이터: Google AdMob 정책에 따름</li>
-  <li>크래시 로그: 수집일로부터 최대 90일</li>
+  <li>지원·삭제 요청 데이터: 발신 이메일, 요청 내용·첨부와 본인 확인에 사용한 최소 정보는 요청 처리와 결과 안내가 끝날 때까지 보관한 뒤 지체 없이 삭제합니다. 다만 소비자 불만·분쟁 기록에 해당하면 관련 법령에 따라 최대 3년간 별도 보관할 수 있습니다.</li>
+  <li>광고 및 분석 데이터: Google AdMob·Firebase Analytics의 설정과 각 제공자 정책에 따라 보관됩니다. 자동 생성된 앱 인스턴스·광고 식별자는 Firebase uid와 항상 직접 연결되지 않을 수 있어, 식별·삭제 가능한 범위는 이용자가 제공한 식별 정보와 제공자 기능에 따라 달라질 수 있습니다.</li>
+  <li>제3자 진단·서비스 로그: Firebase Crashlytics(Snackcade) 및 Unity IAP 서비스 로그는 각 제공자 문서의 보존·삭제 절차를 따릅니다. Unity는 IAP 서비스 로그의 일반 보존기간을 90일로 안내하며, 그 밖의 구매·Insights 데이터는 처리 목적과 Unity의 역할·정책에 따라 달라질 수 있습니다. StarGuardians의 Google Cloud 운영 로그는 프로젝트에 설정된 보존기간 또는 계속되는 법적·보안상 근거가 끝날 때까지 제한적으로 남을 수 있습니다.</li>
 </ul>
-<p>앱 삭제만으로는 기기의 로컬 데이터가 삭제되며 서버 계정 데이터는 자동 삭제되지 않을 수 있습니다. 서버 데이터 삭제는 앱의 <strong>설정 → 계정 관리 → 계정 삭제</strong> 또는 <a href="delete-account.html">StarGuardians 계정 및 데이터 삭제 페이지</a>에서 요청할 수 있습니다. 법률상 보존이 필요한 거래 기록은 일반 게임 데이터와 분리하고 접근을 제한하며, 보존 기간이 끝나면 삭제 또는 비식별화합니다.</p>
+<p>앱 삭제만으로는 기기의 로컬 데이터가 삭제되며 서버 계정 데이터는 자동 삭제되지 않을 수 있습니다. 서버 데이터 삭제는 앱의 <strong>설정 → 계정 관리 → 계정 삭제</strong> 또는 <a href="delete-account.html">StarGuardians 계정 및 데이터 삭제 페이지</a>에서 요청할 수 있습니다. Firebase Authentication의 실사용 계정은 삭제 처리되지만 제공자의 백업 시스템 정리에는 Firebase가 고지한 절차상 시간이 추가로 걸릴 수 있습니다. 확인된 외부 삭제 요청에는 별도 지정이 없어도 회사가 관리하는 계정·게임 데이터와 식별 가능한 Firebase Analytics·Google Cloud 로그의 검토, Unity IAP 처리자 데이터 삭제 전달이 포함됩니다. Unity IAP 처리자 데이터는 회사가 최소 거래 식별자만 사용해 <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>으로 삭제를 지시하고 결과를 추적합니다. Unity가 독립적으로 관리하는 정보와 Google의 광고 플랫폼 데이터는 각 제공자의 개인정보 요청 절차도 함께 안내합니다. 법률상 보존이 필요한 거래 기록은 일반 게임 데이터와 분리하고 접근을 제한하며, 보존 기간이 끝나면 삭제 또는 비식별화합니다.</p>
 
 <h2>5. 이용자의 권리</h2>
 <p>이용자는 다음과 같은 권리를 행사할 수 있습니다.</p>

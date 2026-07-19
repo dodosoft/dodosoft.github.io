@@ -15,7 +15,7 @@
 </header>
 
 <h1>StarGuardians 계정 및 데이터 삭제</h1>
-<div class="updated">최종 수정일: 2026년 7월 17일</div>
+<div class="updated">최종 수정일: 2026년 7월 20일 / Last updated: July 20, 2026</div>
 
 <div class="info-box">
   이 페이지는 DodoSoft의 모바일 게임 <strong>StarGuardians</strong> 계정과 연결된 데이터를 삭제하는 공식 절차입니다.<br>
@@ -29,13 +29,17 @@
       Select <strong>Settings → Account Management → Delete Account</strong>.</li>
   <li>두 번의 확인 안내를 읽고 삭제를 확정합니다. / Review both confirmation prompts and confirm deletion.</li>
 </ol>
-<p>인증이 완료되면 계정과 일반 게임 데이터가 삭제되고 기기의 로컬 세이브가 초기화됩니다. 삭제 계정이 등록한 진행 중 경매는 삭제 과정에서 취소되며, 다른 이용자의 현재 최고입찰금이 있으면 해당 이용자에게 반환됩니다.</p>
-<p>After authentication, the account and ordinary game data are deleted and the local save is reset. Any open auction listed by the deleted account is canceled during deletion, and a surviving user's current highest bid is returned to that user.</p>
+<p>인증이 완료되면 계정과 일반 게임 데이터가 삭제되고 기기의 로컬 세이브가 초기화됩니다. 퇴역한 경매 기능은 신규 등록·입찰을 받지 않습니다. 과거에 생성된 잔여 매물이 있으면 삭제 과정에서 취소하고, 생존 이용자의 에스크로 자산은 해당 이용자에게 반환합니다.</p>
+<p>After authentication, the account and ordinary game data are deleted and the local save is reset. The retired auction feature accepts no new listings or bids. If a legacy listing remains, deletion cancels it and returns a surviving user's escrowed assets to that user.</p>
+<p>Apple 계정을 연동한 이용자는 삭제 전에 Apple 시스템에서 다시 확인하고 Apple 토큰을 철회해야 합니다. 확인 취소 또는 철회 실패 시 계정 삭제는 시작되지 않습니다. 이 절차는 StarGuardians와의 연결을 해제하는 것이며 Apple ID 자체를 삭제하지 않습니다.</p>
+<p>If you linked an Apple account, Apple re-verification and Apple token revocation are required before deletion. If verification is canceled or revocation fails, account deletion does not start. This removes the StarGuardians linkage; it does not delete your Apple ID.</p>
 
 <h2>앱 없이 삭제 요청 / Request Deletion Without the App</h2>
-<p>앱에 접속할 수 없는 경우 아래 이메일 링크로 요청해 주세요. 본인 확인을 위해 플랫폼(Android/iOS), 게임 내 닉네임, 로그인 제공자(Google/Apple/게스트), 마지막 접속 시기를 알려주세요.</p>
-<p>If you cannot access the app, use the email link below. For account verification, include your platform (Android/iOS), in-game nickname, sign-in provider (Google/Apple/Guest), and approximate last login date.</p>
+<p>앱에 접속할 수 없는 경우 아래 이메일 링크로 요청해 주세요. 본인 확인을 위해 플랫폼(Android/iOS), 게임 내 닉네임 또는 친구 코드, 로그인 제공자(Google/Apple/게스트), 마지막 접속 시기를 알려주세요. 회사는 발신 이메일 주소와 요청 본문·첨부를 본인 확인과 처리 결과 안내에 사용합니다.</p>
+<p>If you cannot access the app, use the email link below. For account verification, include your platform (Android/iOS), in-game nickname or friend code, sign-in provider (Google/Apple/Guest), and approximate last login date. We use the sender email address, message, and attachments to verify the request and report the result.</p>
 <p><a href="mailto:vintermilv@gmail.com?subject=%5BStarGuardians%5D%20Account%20Deletion%20Request">계정 삭제 요청 이메일 보내기 / Email an Account Deletion Request</a></p>
+<p>범위를 별도로 제한하지 않으면 외부 삭제 요청은 회사가 관리하는 계정·게임 데이터, 식별 가능한 Firebase Analytics·Google Cloud 운영 로그의 검토, Unity IAP 처리자 데이터 삭제 전달을 모두 포함합니다. 회사는 본인 확인 후 ① 계정·게임 데이터를 삭제하고, ② 식별 가능한 분석·로그 데이터를 설정·법률이 허용하는 범위에서 삭제하며, ③ 관련 구매가 있으면 필요한 최소 거래 식별자만 사용해 <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>으로 Unity에 삭제를 지시하고 제공자 티켓과 결과를 추적하며, ④ 계속 보존해야 하는 항목과 근거를 안내합니다.</p>
+<p>Unless you narrow the scope, an external deletion request covers account and game data under our control, a review of identifiable Firebase Analytics and Google Cloud operational logs, and routing of a Unity IAP processor-data deletion request. After verification, we (1) delete account and game data, (2) delete identifiable analytics or log data where configuration and law permit, (3) instruct Unity at <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a> using only the minimum relevant transaction identifier and track the provider ticket and result, and (4) explain any item that must remain and the basis for retention.</p>
 <div class="info-box">
   <strong>보안 안내 / Security Notice</strong><br>
   비밀번호, 로그인 토큰, 신분증 원본 또는 전체 구매 영수증을 보내지 마세요.<br>
@@ -46,24 +50,59 @@
 
 <h2>삭제되는 데이터 / Data We Delete</h2>
 <ul>
-  <li>Firebase Authentication 계정과 Google/Apple 연결 정보 / Firebase Authentication account and Google/Apple linkage</li>
-  <li>닉네임, 클라우드 세이브, 보유 카드·덱·재화·진행도 / Nickname, cloud save, cards, decks, balances, and progress</li>
+  <li>Firebase Authentication 실사용 계정과 Google/Apple 연결 정보 / Live Firebase Authentication account and Google/Apple linkage</li>
+  <li>닉네임·공개 player ID·친구 코드·프로필 카드·아바타·프레임·코스메틱 / Nickname, public player ID, friend code, profile card, avatar, frame, and cosmetics</li>
+  <li>친구 요청·친구·차단 social graph와 친구 관계의 직접 계정 연결 / Friend requests, friends, block social graph, and direct account linkage in those relationships</li>
+  <li>클랜 가입·역할·기여·가입 요청·클랜전의 직접 계정 연결 / Direct account linkage in clan membership, role, contribution, join requests, and clan wars</li>
+  <li>카드 교환 제안·상태·활동·사용량 및 에스크로의 직접 계정 연결 / Direct account linkage in card-trade offers, status, activity, usage, and escrow</li>
+  <li>클라우드 세이브, 보유 카드·덱·재화·진행도와 필수·선택 동의 상태 / Cloud save, cards, decks, balances, progress, and required and optional consent status</li>
   <li>우편, 광고 보상, 요청 제한 및 멱등 처리 기록 / Mail, ad rewards, rate-limit, and idempotency records</li>
   <li>쿠폰 사용 및 보상 수령 기록 / Coupon-redemption and reward-claim records</li>
-  <li>PvP 랭킹·시즌·매치의 계정 연결 정보 / Account-linked PvP ranking, season, and match data</li>
-  <li>경매 등록·입찰·감사 기록의 계정 연결 정보 / Account-linked auction, bid, and audit data</li>
+  <li>PvP 랭킹·시즌·매치의 직접 계정 연결 정보 / Direct account linkage in PvP ranking, season, and match data</li>
+  <li>퇴역 경매에서 삭제 계정이 등록한 잔여 매물과 과거 기록에 남은 직접 uid 연결 정보 / Residual listings created by the deleted account and direct uid links in historical records for the retired auction feature</li>
 </ul>
+<p>친구·클랜 검색어 원문은 현재 게임 서버에 저장하거나 로그로 남기지 않으므로 별도 삭제 대상이 없습니다. 공개 클랜명·공지처럼 다른 이용자와 공동으로 사용하는 콘텐츠는 계정의 직접 식별자를 제거한 뒤 서비스 연속성·분쟁 방지를 위해 남을 수 있으며, 필요한 경우 확인된 외부 요청에서 추가 삭제를 검토합니다.</p>
+<p>The current game server does not persist or log raw friend or clan search queries, so there is no stored query to delete. Shared content such as a public clan name or notice may remain after direct account identifiers are removed when needed for service continuity or dispute prevention; a verified external request may ask us to review that content for further deletion.</p>
 
-<h2>법률상 보존되는 데이터 / Legally Retained Data</h2>
-<p>관련 법령, 환불, 분쟁 해결 및 결제 부정사용 방지를 위해 아래 거래 기록은 일반 게임 데이터와 분리하여 접근을 제한한 상태로 보존할 수 있습니다. 보존 기간이 끝나면 안전하게 삭제하거나 계정과 연결할 수 없도록 비식별화합니다.</p>
-<p>We may retain the following transaction records separately with restricted access when required for law, refunds, dispute resolution, or payment-fraud prevention. After the retention period, they are securely deleted or de-identified so they can no longer be linked to the game account.</p>
-<p>결제, 광고 보상 및 경매의 중복 지급·재전송을 막기 위해 필요한 최소 원장은 계정 삭제 시 uid를 제거하고 일방향 가명 표식으로 교체할 수 있습니다. 이 표식은 일반 게임 데이터와 분리해 접근을 제한하며, 원장 목적이나 아래 법정 보존기간이 끝나면 삭제 또는 추가 비식별화합니다.</p>
-<p>For the minimum ledgers needed to prevent duplicate or replayed purchase, ad-reward, and auction transactions, we may remove the uid and replace it with a one-way pseudonymous marker at account deletion. These markers are separated from ordinary game data with restricted access and are deleted or further de-identified when the ledger purpose or applicable period below ends.</p>
+<h2>가명 보존되는 최소 원장 / Minimum Pseudonymous Ledgers Retained</h2>
+<p>관련 법령, 환불·회계, 분쟁 해결, 중복 지급·재전송과 부정사용 방지를 위해 아래 최소 기록은 일반 게임 데이터와 분리하고 접근을 제한하여 보존할 수 있습니다. 계정 삭제 시 원문 uid를 제거하고 <strong>StarGuardians 계정 삭제 전용 도메인을 분리한 일방향 SHA-256 표식</strong>으로 교체합니다.</p>
+<p>We may retain the minimum records below, separately with restricted access, for legal compliance, refunds and accounting, dispute resolution, duplicate or replay prevention, and fraud prevention. At account deletion, we remove the plaintext uid and replace it with a <strong>one-way SHA-256 marker separated by a StarGuardians account-deletion-specific domain</strong>.</p>
+<ul>
+  <li>지급·거부 영수증 원장: 상품·주문·거래 식별자, 지급·환불·거부 상태와 가명 uid 표식 / Granted and rejected receipt ledgers: product, order and transaction identifiers, grant/refund/rejection status, and pseudonymous uid marker</li>
+  <li>AdMob 서버측 검증(SSV) 원장: 광고 거래 ID, 보상 처리 결과·시각과 가명 uid 표식 / AdMob server-side verification (SSV) ledger: ad transaction ID, reward result and time, and pseudonymous uid marker</li>
+  <li>퇴역 경매의 과거 감사·입찰 원장: 매물 ID, 입찰·정산 금액과 시각, 복구에 필요한 거래 맥락과 가명 uid 표식 / Historical audit and bid ledgers for the retired auction feature: listing ID, bid or settlement amount and time, recovery context, and pseudonymous uid marker</li>
+  <li>삭제 차단 표식: 원문 uid 없이 일방향 uid 해시, 삭제 상태와 처리 시각만 보존하여 만료 전 인증 토큰이나 지연 광고 콜백이 데이터를 다시 만들지 못하게 함 / Deletion-blocking marker: only a one-way uid hash, deletion status, and processing timestamps, without the plaintext uid, to stop still-valid tokens or delayed ad callbacks from recreating data</li>
+</ul>
+<p>이 최소 원장은 명시된 목적 또는 적용 법률상 보존 근거가 유지되는 동안만 사용합니다. 목적과 법적 의무가 사례별로 달라 일률적인 고정 기간을 적용하지 않으며, 목적 또는 적용 기간이 끝나면 삭제하거나 추가 비식별화합니다. 현재 보존 상태 확인이나 추가 삭제 검토는 아래 이메일로 요청할 수 있습니다.</p>
+<p>These minimum ledgers are used only while their stated purpose or an applicable legal retention basis continues. Because the purpose and obligation can differ by case, no single fixed period applies. When the purpose or applicable period ends, the records are deleted or further de-identified. You may email us to ask about current retention status or request a further deletion review.</p>
+
+<h2>법정 거래기록 / Statutory Transaction Records</h2>
 <ul>
   <li>계약·청약철회 및 대금결제·재화 공급 기록: 5년 / Contract, cancellation, payment, and supply records: 5 years</li>
   <li>소비자 불만 또는 분쟁 처리 기록: 3년 / Consumer complaint or dispute records: 3 years</li>
   <li>표시·광고 기록: 6개월 / Display and advertising records: 6 months</li>
 </ul>
+<p>일반 지원·삭제 요청의 이메일 주소, 본문·첨부와 본인 확인 자료는 처리 결과를 안내한 뒤 지체 없이 삭제합니다. 다만 해당 요청이 소비자 불만·분쟁 기록이면 관련 법령에 따라 최대 3년간 별도 보관할 수 있습니다.</p>
+<p>We delete the email address, message, attachments, and verification material for an ordinary support or deletion request without undue delay after reporting the result. If the request is a consumer complaint or dispute record, it may be retained separately for up to three years where required by law.</p>
+
+<h2>제3자 시스템의 삭제 / Deletion from Third-Party Systems</h2>
+<ul>
+  <li>Firebase Authentication 실사용 계정은 게임의 삭제 절차에서 제거됩니다. Firebase가 운영하는 백업 시스템의 정리에는 제공자가 고지한 절차상 시간이 추가로 걸릴 수 있습니다. / The live Firebase Authentication account is removed by the game's deletion flow. Clearing Firebase-operated backup systems may require additional time under the provider's documented process.</li>
+  <li>Firebase Analytics 및 Google Cloud Logging에 남은 분석·운영 로그는 앱 데이터베이스와 별도 시스템입니다. 확인된 요청이 접수되면 회사가 관리할 수 있는 범위에서 삭제를 수행하거나 제공자 절차에 따라 처리합니다. 프로젝트 설정 보존기간이나 법적·보안상 보존 근거가 남은 로그는 그 근거가 끝날 때까지 제한적으로 보존될 수 있습니다. / Firebase Analytics and Google Cloud Logging are systems separate from the app database. Following a verified request, we delete data within our control or process it under the provider's procedure. Logs covered by configured retention or a continuing legal or security basis may remain with restricted access until that basis ends.</li>
+  <li>StarGuardians Android Build 63의 Firebase Analytics 23.2.0은 앱 인스턴스·자동 이용 이벤트 등을 앱 데이터베이스와 별도로 처리합니다. 앱 인스턴스·광고 식별자가 Firebase uid와 항상 직접 연결되는 것은 아니므로, 이용자가 제공한 식별 정보와 제공자 기능으로 식별 가능한 범위를 삭제하고 식별할 수 없는 범위와 이유를 결과에 명시합니다. / Firebase Analytics 23.2.0 in StarGuardians Android Build 63 processes app-instance data and automatic usage events separately from the app database. Because an app-instance or advertising identifier is not always directly linked to a Firebase uid, we delete the scope identifiable through requester-supplied identifiers and provider functionality and explain any scope that cannot be identified.</li>
+  <li>Google AdMob은 광고·기기 식별자, 대략적 위치, 상호작용과 진단을 처리하며, 보상형 광고 SSV에서 Firebase uid를 <code>user_id</code>로 처리합니다. 회사 원장의 원문 uid는 계정 삭제 시 가명화합니다. Google이 독립적으로 관리하는 광고 데이터는 Google 개인정보 요청·광고 ID 관리 절차를 안내합니다. / Google AdMob processes advertising and device identifiers, approximate location, interactions and diagnostics, and processes the Firebase uid as SSV <code>user_id</code> for rewarded ads. We pseudonymize the plaintext uid in our ledger at account deletion. For advertising data Google controls independently, we provide Google's privacy-request and advertising-ID controls.</li>
+  <li>Unity IAP 5.4 IAP Insights 및 거래 데이터 중 Unity가 회사를 대신해 처리하는 데이터는 본인 확인 후 회사가 필요한 최소 거래·설치 식별자만 사용해 <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a>으로 수동 삭제를 지시하고 발송일·제공자 티켓·회신·완료일을 추적합니다. 전체 영수증, 결제수단 또는 로그인 토큰은 Unity에 보내지 않습니다. Unity는 IAP 서비스 로그의 일반 보존기간을 90일로 안내합니다. Unity가 독립적으로 관리하는 데이터는 이용자도 같은 주소로 직접 요청할 수 있습니다. / After verification, for Unity IAP 5.4 IAP Insights and transaction data that Unity processes on our behalf, we instruct Unity manually at <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a> using only the minimum transaction or installation identifier and track the sent date, provider ticket, response, and completion date. We do not send a full receipt, payment credentials, or login token to Unity. Unity states a general 90-day retention period for IAP service logs. You may also contact the same address directly for data Unity controls independently.</li>
+  <li>게임 계정 삭제는 Google Play 또는 App Store 계정과 해당 플랫폼의 구매 내역을 삭제하지 않습니다. 플랫폼이 보유한 정보는 각 플랫폼의 개인정보 관리 절차를 이용해 주세요. / Deleting the game account does not delete your Google Play or App Store account or platform purchase history. Use the applicable platform's privacy process for platform-held data.</li>
+</ul>
+
+<h2>회사의 처리 순서 / Our Operating Procedure</h2>
+<ol>
+  <li>접수 시 임의의 요청 번호와 접수 시각을 만들고, 비밀번호·토큰·전체 영수증 같은 불필요한 비밀정보가 있으면 저장하지 않고 삭제·가림 처리합니다. / At intake, we create a random request number and received timestamp, and remove or redact unnecessary secrets such as passwords, tokens, or full receipts.</li>
+  <li>플랫폼, 닉네임 또는 친구 코드, 로그인 제공자와 최근 접속 정보 등 최소 정보로 계정 소유를 확인합니다. / We verify account ownership using minimum information such as platform, nickname or friend code, sign-in provider, and recent activity.</li>
+  <li>서버 계정 삭제를 실행하고 Firebase Authentication 제거, 일반 게임 데이터 삭제, 소셜·클랜·교환 관계 정리, 잔여 원장의 uid 가명화를 확인합니다. / We run server account deletion and verify Firebase Authentication removal, ordinary game-data deletion, social, clan and trade cleanup, and uid pseudonymization in residual ledgers.</li>
+  <li>식별 가능한 Firebase Analytics·Google Cloud 데이터는 제공자 기능과 허용 범위에서 삭제하고, Unity IAP 처리자 데이터는 위 주소로 최소 식별자만 전달하여 제공자 티켓을 추적합니다. / We delete identifiable Firebase Analytics and Google Cloud data within provider functionality and permitted scope, and route Unity IAP processor data with minimum identifiers while tracking the provider ticket.</li>
+  <li>처리한 시스템, 완료일, 보존 항목과 근거, 제공자 후속 절차를 이용자에게 안내하고, 법적 보존이 필요 없는 요청·본인 확인 자료를 삭제합니다. / We report the systems processed, completion date, retained items and basis, and any provider follow-up, then delete request and verification material not subject to legal retention.</li>
+</ol>
 <p>자세한 내용은 <a href="privacy-ko.html">개인정보처리방침</a> 및 <a href="privacy-en.html">Privacy Policy</a>을 확인해 주세요.</p>
 
 <h2>문의 / Contact</h2>
