@@ -15,7 +15,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<div class="updated">Last Updated: July 20, 2026</div>
+<div class="updated">Last Updated: August 13, 2026</div>
 
 <div class="info-box">
 This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us," or "our"), including Neon Drop Arcade, Snackcade, StarGuardians, and any future titles (collectively, the "Services"). Some features described below (such as global leaderboards and analytics) apply only to certain titles; this is noted where relevant.
@@ -34,6 +34,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li><strong>Account Identifier and Account Information (Snackcade, StarGuardians):</strong> A Firebase Authentication user ID (uid) is generated automatically on first launch. If you optionally link a Google or Apple account in StarGuardians, the provider identifier and any name, email address, or display name supplied by that provider may be processed for authentication. The app displays email addresses in masked form.</li>
   <li><strong>Auto-Generated Display Name (Snackcade only):</strong> A randomly generated nickname (e.g., "Player1234") derived from the anonymous uid, used only for global leaderboard display. No user input is collected.</li>
   <li><strong>Game Score Data (Snackcade only):</strong> Highest score per game, timestamp of submission, and the auto-generated display name, stored on Firebase Realtime Database for global leaderboard purposes.</li>
+  <li><strong>TikTok Game Measurement Data (Snackcade Android, only after separate explicit opt-in):</strong> If you directly enable this choice in Settings, the app may send TikTok Business app install and launch events, game identifier, game start and completion, score, play duration in seconds, and pseudonymous event IDs scoped to the installation, session, and game run. This integration does not send your name, email, Firebase uid, purchase or payment information, screen text, buttons, resource names, or ad-revenue events.</li>
   <li><strong>Profile and Social Information (StarGuardians only):</strong> We process a nickname, public player ID and friend code, selected profile card, avatar, frame and cosmetics, friend requests, friend and block relationships, clan name, emblem, notice, role, contribution and join requests, and card-trade offers, status and audit records. Items you choose or expect to make visible for a feature, such as your nickname, public ID, profile cosmetics and clan information, are shown to other users of that feature. Your email and sign-in-provider ID are not shown on social screens.</li>
   <li><strong>Search Information (StarGuardians only):</strong> A nickname, friend code, or clan-name query you enter to find a friend or clan is transmitted temporarily to the server. The current game server does not persist or log the raw query.</li>
   <li><strong>Roster, Save, Ranking, and Game Activity Data (StarGuardians only):</strong> Owned cards, decks and deck names, currency balances, stage, mission, attendance and tutorial progress, gacha, rewards and mail, PvP and clan-war results, and season scores are stored on Firebase Cloud Firestore under your uid.</li>
@@ -52,6 +53,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>To improve our Services and user experience</li>
   <li>To fix bugs and maintain app stability</li>
   <li>To analyze usage statistics</li>
+  <li>When you separately opt in, to measure and attribute TikTok advertising performance and optimize campaigns for Snackcade Android</li>
   <li>To operate global leaderboards and display rankings (Snackcade only)</li>
   <li>To authenticate accounts and operate cloud save, profiles, friends, clans, card trades, PvP, and clan wars (StarGuardians only)</li>
   <li>To verify purchases, grant rewards, prevent duplicate payment or abuse, and resolve disputes (StarGuardians only)</li>
@@ -82,6 +84,11 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
       <td>Google UMP (User Messaging Platform)</td>
       <td>Consent management</td>
       <td>Consent status</td>
+    </tr>
+    <tr>
+      <td>TikTok for Business App Events SDK (Snackcade Android, only after separate explicit opt-in)</td>
+      <td>Advertising measurement, attribution, and campaign optimization for app install, launch, game start, and game completion</td>
+      <td><code>InstallApp</code>, <code>LaunchAPP</code>, <code>game_start</code>, and <code>game_complete</code> events; game identifier; score; play duration in seconds; and pseudonymous event IDs scoped to the installation, session, and game run. Automatic purchase, ad-revenue, two-day-retention, and enhanced screen, text, and resource collection are disabled.</td>
     </tr>
     <tr>
       <td>Google Play Services / Play Integrity (StarGuardians Android)</td>
@@ -139,6 +146,8 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>AdMob: <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">https://support.google.com/admob/answer/6128543</a></li>
   <li>Firebase: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></li>
   <li>Firebase Analytics data disclosure: <a href="https://support.google.com/analytics/answer/11582702" target="_blank" rel="noopener">https://support.google.com/analytics/answer/11582702</a></li>
+  <li>TikTok for Business Privacy and Cookies Policy: <a href="https://ads.tiktok.com/i18n/official/policy/privacy" target="_blank" rel="noopener">https://ads.tiktok.com/i18n/official/policy/privacy</a></li>
+  <li>TikTok App Events SDK information: <a href="https://ads.tiktok.com/help/article/about-the-tiktok-app-events-sdk?lang=en" target="_blank" rel="noopener">https://ads.tiktok.com/help/article/about-the-tiktok-app-events-sdk?lang=en</a></li>
   <li>Unity IAP: <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview" target="_blank" rel="noopener">https://docs.unity.com/en-us/iap/privacy-and-consent/overview</a></li>
   <li>Unity IAP Google Play Data safety: <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/google-play-data-safety" target="_blank" rel="noopener">https://docs.unity.com/en-us/iap/privacy-and-consent/google-play-data-safety</a></li>
   <li>Unity Privacy Policy: <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">https://unity.com/legal/privacy-policy</a></li>
@@ -159,6 +168,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>Display and advertising records: retained separately for 6 months where required by law</li>
   <li>Support and deletion-request data: We keep the sender email address, request and attachments, and minimum verification information until we complete and report the request, then delete them without undue delay. If the communication is a consumer complaint or dispute record, it may be retained separately for up to three years where required by law.</li>
   <li>Advertising and analytics data is retained according to the applicable Google AdMob and Firebase Analytics settings and provider policies. Automatically generated app-instance and advertising identifiers may not always be directly linked to a Firebase uid, so the identifiable and deletable scope depends on the identifiers supplied by the requester and provider functionality.</li>
+  <li>TikTok game measurement data (Snackcade Android): The consent choice is stored on the device and is removed when the app is uninstalled. Events sent after opt-in are handled under TikTok for Business settings, retention, and deletion policies. We do not separately store these events on our server linked to a Firebase uid. You can immediately stop future transmission at any time through <strong>Settings → Privacy &amp; Consent → Allow TikTok game measurement</strong>.</li>
   <li>Third-party diagnostic and service logs: Firebase Crashlytics (Snackcade) and Unity IAP service logs follow each provider's retention and deletion process. Unity states a general 90-day retention period for IAP service logs; retention of other purchase and Insights data may vary by purpose and Unity's role and policy. StarGuardians Google Cloud operational logs may remain for the project's configured retention period or while a continuing legal or security basis applies.</li>
 </ul>
 <p>Uninstalling the app removes local device data but may not automatically delete server account data. You can request server deletion in StarGuardians through <strong>Settings → Account Management → Delete Account</strong> or through our <a href="delete-account.html">StarGuardians Account and Data Deletion page</a>. The live Firebase Authentication user is deleted, although clearing the provider's backup systems may require additional time under Firebase's documented process. Unless you narrow the scope, a verified external deletion request covers account and game data under our control, a review of identifiable Firebase Analytics and Google Cloud log data, and routing of a Unity IAP processor-data deletion request. For Unity IAP processor data, we instruct Unity at <a href="mailto:unity-iap-contact@unity3d.com">unity-iap-contact@unity3d.com</a> using only the minimum transaction identifier and track the result. We also explain the provider privacy process for data Unity controls independently and for Google advertising-platform data. Transaction records required by law are separated from ordinary game data with restricted access and are deleted or de-identified after the applicable retention period.</p>
@@ -171,6 +181,7 @@ This Privacy Policy applies to all mobile games provided by DodoSoft ("we," "us,
   <li>Request deletion of your information (including leaderboard records)</li>
   <li>Object to or restrict processing</li>
   <li>Withdraw consent for personalized advertising (via in-app settings or device settings)</li>
+  <li>Withdraw consent to TikTok game measurement for Snackcade Android at any time through in-app settings</li>
 </ul>
 <p>To exercise any of these rights, please email us at the address provided below.</p>
 <p>For the StarGuardians deletion process and the exact deletion and retention scope, see our <a href="delete-account.html">Account and Data Deletion page</a>.</p>
