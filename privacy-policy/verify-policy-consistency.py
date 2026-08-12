@@ -71,6 +71,7 @@ def main() -> int:
             "Firebase uid", "SSV", "프로필 및 소셜 정보", "친구 코드", "클랜",
             "카드 교환", "동의 및 환경설정", "지원 및 삭제 요청 정보", "퇴역한 경매",
             "TikTok for Business App Events SDK", "별도 명시 동의", "게임 실행 단위의 가명 이벤트 ID",
+            "Google Play 설치 리퍼러", "Android 광고 ID 수집은 비활성화",
         ],
         "en": [
             "August 13, 2026", "StarGuardians Android analytics notice", "Android 23.2.0", "Automatic collection is enabled",
@@ -78,6 +79,7 @@ def main() -> int:
             "Firebase uid", "SSV", "Profile and Social Information", "friend code", "clan",
             "card-trade", "Consent and Preferences", "Support and Deletion Request Information", "Retired Auction",
             "TikTok for Business App Events SDK", "separate explicit opt-in", "pseudonymous event IDs",
+            "Google Play install referrer", "Android advertising-ID collection is disabled",
         ],
         "delete": [
             "July 20, 2026", "Firebase Analytics 23.2.0", "Unity IAP 5.4 IAP Insights",
