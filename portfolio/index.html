@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DodoSoft 개인 게임 프로젝트 포트폴리오. AI 에이전트와 MCP로 만들어 출시한 모바일·PC 게임과 스토어 링크.">
-  <meta property="og:title" content="Portfolio | DodoSoft">
+  <meta name="description" content="개인 게임 프로젝트 포트폴리오. AI 에이전트와 MCP로 만들어 출시한 모바일·PC 게임과 스토어 링크.">
+  <meta property="og:title" content="Portfolio | 이수호">
   <meta property="og:description" content="AI 에이전트 + MCP 기반으로 출시한 게임 5종 — Android / iOS / Steam">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dodosoft.github.io/portfolio/">
   <link rel="canonical" href="https://dodosoft.github.io/portfolio/">
-  <title>Portfolio | DodoSoft</title>
+  <title>Portfolio | 이수호</title>
   <style>
     :root{--bg:#0b0d12;--panel:#141824;--panel2:#1b2030;--text:#eef1f7;--muted:#9aa3b5;--line:rgba(255,255,255,.08);--accent:#ff4d6d;--accent2:#ffb347;--play:#34a853;--apple:#e8e8ed;--steam:#66c0f4}
     *{box-sizing:border-box}
@@ -56,7 +56,7 @@
     .shots.wide{grid-template-columns:1fr 1fr}
     .shots.wide img{aspect-ratio:16/9}
     .shots.wide img.header{grid-column:1/-1;aspect-ratio:460/215}
-    .pipe{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .pipe{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.pipe .box:last-child:nth-child(odd){grid-column:1/-1}
     .box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
     .box b{display:block;color:var(--accent2);margin-bottom:6px;font-size:14px}
     .box p{margin:0;color:#cfd6e4;font-size:13.5px}
@@ -74,16 +74,16 @@
 <body>
 <main class="shell">
   <nav class="nav" aria-label="주요 링크">
-    <a class="brand" href="../">DODOSOFT</a>
+    <span class="brand">PORTFOLIO</span>
     <div><a class="small" href="#games">Games</a><a class="small" href="#pipeline">AI Pipeline</a></div>
   </nav>
 
   <header class="hero">
     <p class="eyebrow">PERSONAL GAME PROJECTS · BUILT WITH AI AGENTS + MCP</p>
     <h1>AI 에이전트와 함께 만든<br><span>개인 게임 프로젝트</span></h1>
-    <p class="lead">기획·개발·아트·출시·운영을 혼자 맡되, Claude Code·Codex 에이전트를 팀원으로 두고 Unity MCP·Blender MCP·이미지 생성 MCP를 직접 조작하게 하여 만든 게임들입니다. 모두 DodoSoft 명의로 실제 스토어에 출시했습니다.</p>
+    <p class="lead">기획·개발·아트·출시·운영을 혼자 맡되, Claude Code·Codex 에이전트를 팀원으로 두고 Unity MCP·Blender MCP·이미지 생성 MCP를 직접 조작하게 하여 만든 게임들입니다. 모두 실제 스토어에 출시했습니다.</p>
     <div class="chips">
-      <span class="chip">Unity 6 · URP</span><span class="chip">Claude Code · Codex</span><span class="chip">Unity MCP · Blender MCP</span><span class="chip">Firebase · AdMob</span><span class="chip">Android · iOS · Steam</span>
+      <span class="chip">Unity 6 · URP</span><span class="chip">Claude Code · Codex</span><span class="chip">Unity MCP · Blender MCP</span><span class="chip">자체 LLM·이미지 모델 로컬 학습</span><span class="chip">Firebase · AdMob</span><span class="chip">Android · iOS · Steam</span>
     </div>
     <div class="stats">
       <div class="stat"><b>5</b><span>출시 게임 (모바일 4 · PC 1)</span></div>
@@ -164,12 +164,13 @@
     <div class="box"><b>멀티 에이전트 오케스트레이션</b><p>Codex를 오케스트레이터로, Claude 계열을 아키텍트·코더·리뷰어·단순작업 전문 에이전트로 분리. 난이도에 따라 모델 등급을 라우팅하고 입력(GOAL/CONTEXT/FILES/CONSTRAINTS/ACCEPTANCE)·출력(STATUS/FINDINGS/CHANGED/ERRORS/NEXT)을 표준화했습니다.</p></div>
     <div class="box"><b>MCP Tool 연동</b><p>Unity MCP(씬·스크립트·테스트 실행), Blender MCP(모델링·리깅·렌더), 이미지/스프라이트 생성 MCP, 브라우저 MCP(스토어 콘솔 확인). 에이전트가 도구를 직접 호출하고 결과를 검증합니다.</p></div>
     <div class="box"><b>안전장치 · 운영 규칙</b><p>파괴적 Git/자산 삭제 금지, 변경 불가 식별자 목록(패키지명·Firebase·AdMob), 파일당 단일 소유자, 고비용 검증(스크린샷)의 사용 기준을 AGENTS.md/CLAUDE.md로 명문화. "AI가 해도 되는 일"과 "사람이 검수할 일"을 문서로 구분했습니다.</p></div>
+    <div class="box"><b>자체 모델 로컬 학습 · 이미지 생성</b><p>자체 LLM·이미지 생성 모델을 로컬 PC에서 직접 학습시켜 게임 내 이미지(캐릭터·아이템·배경)를 생성했습니다. 외부 API에 의존하지 않고 게임 아트 스타일에 맞춘 학습→추론→검수 파이프라인을 로컬 환경에서 운영합니다.</p></div>
     <div class="box"><b>검수 게이트 · 인계</b><p>생성 단계(이미지→애니메이션→스프라이트)마다 사람 승인 게이트를 두고, 세션 인계 문서로 상태·검증 근거·다음 작업을 보존해 에이전트가 바뀌어도 작업이 끊기지 않게 운영했습니다.</p></div>
   </div>
 
   <footer class="foot">
-    <span>© DodoSoft · Personal game projects by 이수호</span>
-    <span><a href="../privacy-policy/">Privacy</a> · <a href="../">Home</a></span>
+    <span>Personal game projects by 이수호</span>
+    <span></span>
   </footer>
 </main>
 </body>
